@@ -26,7 +26,7 @@
   font-weight:700;font-style:normal;font-display:block;
 }
 
-/* ---- NSO palette, lifted from 202020-Rule-NSO/ui_elements.py THEME ---- */
+/*  NSO palette */
 :root{
   --border:#3617A5;
   --gap:#A2E9F1;
@@ -76,14 +76,13 @@ body{
 button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit;letter-spacing:inherit}
 :focus-visible{outline:3px solid var(--accent);outline-offset:2px}
 
-/* ---- the nested-frame chrome from the widget ---- */
 .frame{
   min-height:100dvh;
   display:flex;flex-direction:column;
   background:var(--gap);
   padding:calc(6px + env(safe-area-inset-top,0px)) 6px calc(6px + env(safe-area-inset-bottom,0px));
   border:6px solid var(--border);
-  overflow-x:clip;          /* backstop: nothing may scroll the page sideways */
+  overflow-x:clip;
   max-width:100%;
 }
 .titlebar{
@@ -125,7 +124,6 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
 .footbar .dot{width:6px;height:6px;background:var(--panel);border:1px solid var(--border)}
 .footbar .grow{flex:1}
 
-/* ---- chunky NSO button ---- */
 .btn{
   background:var(--fill);
   border:3px solid var(--border);
@@ -136,17 +134,16 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
   box-shadow:4px 4px 0 var(--shadow);
   transition:none;
 }
+  
 .btn:hover{background:var(--hover)}
 .btn:active{transform:translate(4px,4px);box-shadow:0 0 0 var(--shadow)}
 .btn:disabled{opacity:.45;cursor:not-allowed;box-shadow:4px 4px 0 var(--shadow)}
 .btn.primary{background:var(--accent);color:var(--panel)}
 .btn.primary:hover{background:var(--iconhover)}
 
-/* ---- screens ---- */
 .screen{display:none;flex-direction:column;flex:1;min-height:0}
 .screen.on{display:flex}
 
-/* editor */
 #editor{overflow-y:auto;padding:16px;gap:16px}
 .lbl{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.18em;color:var(--ink);display:block;margin-bottom:6px}
 .hint{font-size:10.5px;line-height:1.75;color:var(--ink-dim);letter-spacing:.02em}
@@ -156,6 +153,7 @@ input[type=text],textarea{
   color:var(--ink);font-family:var(--px);font-weight:400;
   font-size:16px;padding:10px;line-height:1.7;letter-spacing:.04em;
 }
+  
 textarea{min-height:170px;resize:vertical}
 input:focus,textarea:focus{outline:none;border-color:var(--accent);background:var(--fill)}
 
@@ -177,17 +175,18 @@ input:focus,textarea:focus{outline:none;border-color:var(--accent);background:va
 .chip .x{padding:0 4px;font-size:12px;line-height:1}
 .chip .x:hover{color:var(--accent)}
 
-/* runner — reference-inspired workout display */
 #runner{
   align-items:center;justify-content:center;text-align:center;padding:18px 12px 28px;
   position:relative;overflow:hidden;background:#f5f5f6;
   color:#fff;
 }
+  
 #runner:before{
   content:"";position:absolute;inset:0;
   background:linear-gradient(90deg,rgba(255,255,255,.72),rgba(238,239,242,.86));
   z-index:0;
 }
+  
 #runner>*{position:relative;z-index:1}
 .wname{
   font-family:'Arial Narrow','HelveticaNeue-CondensedBold','Roboto Condensed',Arial,sans-serif;
@@ -195,9 +194,11 @@ input:focus,textarea:focus{outline:none;border-color:var(--accent);background:va
   color:#fff;background:rgba(72,72,75,.74);padding:7px 13px;margin-bottom:14px;
   border:0;line-height:1.15;max-width:92vw;box-shadow:none;
 }
+  
 .dialwrap{
   position:relative;width:min(43vw,174px);aspect-ratio:1;margin-bottom:16px;flex:none;
 }
+  
 .dialwrap svg{width:100%;height:100%;display:block;overflow:visible;transform:none}
 .dialface{fill:#303033;stroke:none}
 .ring-track{fill:none;stroke:rgba(80,80,83,.14);stroke-width:12}
@@ -211,9 +212,11 @@ input:focus,textarea:focus{outline:none;border-color:var(--accent);background:va
   font-size:min(17vw,62px);font-weight:800;color:#fff;
   letter-spacing:-.04em;line-height:1;text-shadow:none;
 }
+  
 .dialwrap.pulse .digits{animation:pop .26s ease-out}
 @keyframes pop{0%{transform:scale(1)}50%{transform:scale(1.10)}100%{transform:scale(1)}}
 @media (prefers-reduced-motion:reduce){.dialwrap.pulse .digits{animation:none}}
+  
 .cur{
   font-family:'Arial Narrow','HelveticaNeue-CondensedBold','Roboto Condensed',Arial,sans-serif;
   background:rgba(76,76,79,.78);color:#fff;border:0;box-shadow:none;
@@ -221,23 +224,27 @@ input:focus,textarea:focus{outline:none;border-color:var(--accent);background:va
   text-transform:uppercase;letter-spacing:.035em;line-height:1.05;
   max-width:92vw;text-wrap:balance;
 }
+  
 .nxt{
   margin-top:9px;background:rgba(92,92,95,.68);color:#fff;border:0;
   padding:6px 10px;font-family:'Arial Narrow','HelveticaNeue-CondensedBold','Roboto Condensed',Arial,sans-serif;
   font-size:clamp(11px,3.5vw,16px);font-weight:800;text-transform:uppercase;letter-spacing:.045em;
   display:inline-flex;gap:7px;align-items:center;max-width:92vw;box-shadow:none;
 }
+  
 .nxt em{font-style:normal;background:rgba(61,61,64,.9);color:#fff;padding:2px 5px;flex:none}
 .nxt span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
 .setc{
   margin-top:9px;font-family:'Arial Narrow','HelveticaNeue-CondensedBold','Roboto Condensed',Arial,sans-serif;
   font-size:11px;font-weight:800;letter-spacing:.12em;color:#66666a;text-transform:uppercase;min-height:14px;
 }
+  
 .ctrls{display:flex;gap:7px;margin-top:15px;flex-wrap:wrap;justify-content:center}
 .ctrls .btn{
   padding:8px 12px;font-size:11px;letter-spacing:.08em;box-shadow:3px 3px 0 rgba(55,55,58,.28);
   background:#fff;border-color:#555;color:#444;
 }
+  
 .ctrls .btn.primary{background:#555;color:#fff;border-color:#555}
 .ctrls .btn:active{transform:translate(3px,3px)}
 .prog{position:absolute;left:0;right:0;bottom:0;height:7px;background:rgba(90,90,94,.12);border-top:0}
@@ -255,8 +262,8 @@ input:focus,textarea:focus{outline:none;border-color:var(--accent);background:va
   </div>
 
   <div class="panel">
-    <!-- ------------------------- EDITOR ------------------------- -->
-    <section class="screen on" id="editor">
+
+      <section class="screen on" id="editor">
       <div>
         <label class="lbl" for="wname">Workout name</label>
         <input type="text" id="wname" autocomplete="off" spellcheck="false" placeholder="ABS WORKOUT">
@@ -267,7 +274,7 @@ input:focus,textarea:focus{outline:none;border-color:var(--accent);background:va
         <textarea id="src" spellcheck="false" autocapitalize="off"></textarea>
         <p class="hint">
           One per line: NAME DURATION x SETS.<br>
-          Reads 30s / 45 / 1m / 1m30s / 2 min. Sets optional: x4, &#215;4, 4 sets.<br>
+          Reads 30s / 45 / 1m / 1m30s / 2 min. Sets optional.<br>
           Lines starting with # are skipped.
         </p>
       </div>
@@ -283,7 +290,6 @@ input:focus,textarea:focus{outline:none;border-color:var(--accent);background:va
 
       <div class="row">
         <button class="btn" id="save">Save</button>
-        <button class="btn" id="demo">Example</button>
       </div>
 
       <div id="savedwrap" style="display:none">
@@ -292,7 +298,6 @@ input:focus,textarea:focus{outline:none;border-color:var(--accent);background:va
       </div>
     </section>
 
-    <!-- ------------------------- RUNNER ------------------------- -->
     <section class="screen" id="runner">
       <div class="aflag" id="aflag"></div>
       <div class="wname" id="rWorkout">WORKOUT</div>
@@ -330,8 +335,6 @@ input:focus,textarea:focus{outline:none;border-color:var(--accent);background:va
 <script>
 "use strict";
 
-/* ================= parsing ================= */
-
 const RE_SETS  = /[x×*]\s*(\d{1,3})\s*$|(\d{1,3})\s*sets?\s*$/i;
 const RE_MINSEC= /(\d+)\s*(?:m|min|mins|minute|minutes)\s*(?:(\d+)\s*(?:s|sec|secs|second|seconds)?)?\s*$/i;
 const RE_SEC   = /(\d+)\s*(?:s|sec|secs|second|seconds)?\s*$/i;
@@ -367,8 +370,6 @@ const fmt = s => { s=Math.max(0,Math.round(s)); const m=Math.floor(s/60);
                    return m ? m+':'+String(s%60).padStart(2,'0') : String(s); };
 const fmtLong = s => { s=Math.max(0,Math.round(s));
                        return Math.floor(s/60)+':'+String(s%60).padStart(2,'0'); };
-
-/* ================= editor ================= */
 
 const REST = 3, LEADIN = 3;
 const $ = id => document.getElementById(id);
@@ -518,7 +519,6 @@ function buildSteps(list){
   return out;
 }
 
-/* circular countdown ring — reference-inspired continuous arc */
 const SVGNS='http://www.w3.org/2000/svg';
 let ringCircle=null, ringCirc=2*Math.PI*43;
 function buildRing(n){
@@ -538,7 +538,6 @@ async function start(){
   steps = buildSteps(parseRoutine(elSrc.value));
   if(steps.length < 2) return;
 
-  // Switch to the runner immediately so the tap always feels instant.
   $('rWorkout').textContent = (elName.value.trim() || 'WORKOUT').toUpperCase();
   $('tbTitle').textContent = 'RUNNING';
   try{ localStorage.setItem(LAST, JSON.stringify({n:elName.value, s:elSrc.value})); }catch(e){}
@@ -547,11 +546,9 @@ async function start(){
   $('runner').classList.remove('done');
   $('cPause').textContent = 'Pause';
 
-  // Audio must never be able to block the workout: a device with no output,
-  // or a resume() that hangs, would otherwise leave START doing nothing.
   try{
     await Promise.race([initAudio(), new Promise(r => setTimeout(r, 1500))]);
-  }catch(e){ /* run silently rather than not at all */ }
+  }catch(e){ }
   if(!ctx) $('aflag').textContent = 'NO AUDIO';
 
   await requestWake();
@@ -570,26 +567,15 @@ function advance(){
   schedule(s, s.secs);
   paint(s);
 
-  // Paint the opening frame now. Waiting for the next tick would flash the
-  // outgoing phase's number underneath the incoming phase's name.
   lastShown = s.secs;
   $('digits').textContent = s.secs >= 60 ? fmt(s.secs) : s.secs;
   paintRing(1);
 }
 
-/* Beeps are queued on the audio clock so they land on time even if the main
- * thread is throttled. Placement (per the brief): EDGE on the first second
- * and on the last second; TICK on the third-last and second-last. Every beep
- * therefore coincides with a number that is actually on screen.            */
 function schedule(s, left){
   if(!ctx || s.kind === 'rest') return;
-  // t0 is on the AUDIO clock; every offset below is relative to it, so the
-  // two clocks never need to agree on an absolute value.
   const t0 = ctx.currentTime, T = s.secs, elapsed = T - left;
 
-  // Map an offset-from-phase-start to an absolute audio-clock time.
-  // null = already elapsed. Anything due right now is nudged a hair ahead,
-  // because a tone scheduled exactly at currentTime can be dropped.
   const at = off => {
     const t = t0 + (off - elapsed);
     if(t < t0 - 0.001) return null;
@@ -597,10 +583,7 @@ function schedule(s, left){
   };
 
   let t;
-  // first second — only on a fresh start, never when resuming mid-phase
   if(elapsed < 0.05 && (t = at(0)) !== null) EDGE(t);
-  // countdown ticks and the closing edge; offsets at or below 0 would
-  // collide with the opening EDGE on very short phases, so drop them
   if(T - 3 > 0 && (t = at(T - 3)) !== null) TICK(t);
   if(T - 2 > 0 && (t = at(T - 2)) !== null) TICK(t);
   if(T - 1 > 0 && (t = at(T - 1)) !== null) EDGE(t);
@@ -615,12 +598,6 @@ function paint(s){
   $('rSet').textContent = (s.kind === 'work' && s.of > 1) ? `SET ${s.set} / ${s.of}` : '';
 }
 
-/* Driven by setInterval, not requestAnimationFrame. rAF is suspended while
-   the page is hidden, which would stop advance() from running at a phase
-   boundary and leave the next interval's beeps unscheduled. A timer keeps
-   ticking (throttled) in the background, so the workout stays on track.
-   Nothing here needs frame-rate updates: digits and ring both change at
-   most once a second. */
 function startLoop(){ clearInterval(tick); tick = setInterval(step, 100); }
 function stopLoop(){ clearInterval(tick); tick = 0; }
 
@@ -699,6 +676,7 @@ function back(){
   else { t = w.filter(i => i < idx).pop(); if(t === undefined) t = w[0]; }
   jump(t);
 }
+  
 function quit(){
   running=false; paused=false;
   stopLoop(); stopScheduled(); releaseWake();
@@ -725,6 +703,7 @@ document.addEventListener('keydown', e => {
 async function requestWake(){
   try{ if('wakeLock' in navigator) wakeLock = await navigator.wakeLock.request('screen'); }catch(e){}
 }
+  
 function releaseWake(){ try{ wakeLock && wakeLock.release(); }catch(e){} wakeLock=null; }
 document.addEventListener('visibilitychange', async () => {
   if(document.visibilityState !== 'visible') return;
