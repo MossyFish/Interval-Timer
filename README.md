@@ -9,4 +9,8 @@ Phone functionality page that lets you save and play workouts and gives audio cu
 # IOS app access
 Open in Safari at https://nso-workout-timer.netlify.app/ 
 
+<<<<<<< HEAD
 Press share -> Add to home screen  
+=======
+Press share -> Add to home screen  
+>>>>>>> d40c7a06f2e7f4264046379c01a578d50ff9ef23
