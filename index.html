@@ -1,0 +1,747 @@
+<!doctype html>
+<html lang="en" data-t="nso">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<title>Interval</title>
+<meta name="theme-color" content="#3617A5">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Interval">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="icon" type="image/png" href="icon-180.png">
+<link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjogIkludGVydmFsIiwgInNob3J0X25hbWUiOiAiSW50ZXJ2YWwiLCAic3RhcnRfdXJsIjogIi4iLCAiZGlzcGxheSI6ICJzdGFuZGFsb25lIiwgIm9yaWVudGF0aW9uIjogInBvcnRyYWl0IiwgImJhY2tncm91bmRfY29sb3IiOiAiIzM2MTdBNSIsICJ0aGVtZV9jb2xvciI6ICIjMzYxN0E1IiwgImljb25zIjogW3sic3JjIjogImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBTUFBQUFEQUNBWUFBQUJTM0d3SEFBQWxPVWxFUVZSNDJ1MmRlWlNkVlpudWYzdC93NWxyT0RVbFpDSURxYVFoZ1JBSUtnbWdUTm9YR2xFUXBia0tLZzNxVlJ1VmJteHRCUzhJdGcyNXltb0ZGYkZ0YU1TaHdRWW5CRVVDMkNTRUFFbWFEQ1JNbVNvMTE2a3pmY1BlOTQvdjFDSFFrS29rbFZDbmFqOXJoY1dDU2xHY3ZNOStuM2NXUzlydTFCZ1lURkJJOHhFWUdBSVlHQmdDR0JnWUFoZ1lHQUlZR0JnQ0dCaE1BTmdqK2lvQlFncnphUm5VRExUU29FZURBQUowb1BHS0FSZ09HTlNFOVlPVHNCQzJHSllFOW5ER3J3Sk5vc0ZsK29uMXFGQ2JEOWRnN090NlM3QjdmVC9GUGc4NURBbjJTZ0FoQlVFeG9PWEVlaTY4NXhUS09kOUlJWU14TDMxaUdZYzd6MzJZclEvdUlsYnZvUGZ5Y0k5WUFwVnpQdDZnSVlCQkRXaC9JcHNkaVdUZnB5QjQ2SmVCd1ZpR2tHTEU4YXBKZ3hxWU9vQ0JnU0dBZ1lFaGdJR0JJWUNCQWFZVlluOGpjUE9aR25CUWk3eGptd0FCb05DR0NBYWpidmdTZ1RWV0NTQ0FBTTN4ZG93bVlSRWFFaGlNb3ZGYkNMcDF5S3FnakkwWU5VOWdqL1lQMmlJa3JkSStDTTdLWUdKRElKVWUreExJQnpTYXdIZ0FnMUY4V08yS2JkVkVFTHpuTHdPRDBiUXJUQnJVd01BUXdNREFFTURBd0JEQXdNQVF3TURBRU1EQXdCREF3TUFRd01EQUVNREF3QkRBd0lCRDJncGhzRzlRcjEvaEowQ2F6UnVHQUJNQlFvQ1RzYU1tRjExcGRsRVFGc0pYQ1JKcXRJNitWb2hvM1ljdy9EQUVHQS9HSHdTYWpTdDZDUU9ORUpFM2lDY3QyaGRtQU5BYW5Ib2JMQ0FFZkkzeUZhRWZ0UVVQa2NJUXdoQ2dwcUExV0phZ21BLzR5a2ZYMHQvcjR6aUNNQVEzTHBrK08xa2x5TEZMRzBrMTJNeWFtMkw2dkJTdHJUSGlMVTdrTGNvYTdXbDhYMFhka3RLUXdSQ2d4cnhBTW0wVEJCcmJqcWFjdE5LOHVDbGZsVVJiL251UU1OQWtraGJTRVV5Ym1XVEd2QlNMM3Q3QTNJVVpEcHVWSkpHMVFZRXVxQ29acEdXWVlBaFFJMEZ3OUN2eURBQ3h4S3ZKdVVUU2lyWjBLdzBLWHRxY1o4djZRUjY0ZXlkMWpRN1pOcGZGUzdPOC9Zd21qbHBjVDd6VmdRQ0NYSWpTR21tOGdpRkE3UzE0ZmZYdnc5Y05BY1lTa25neU11b3cwT3grcGNROVA5ekdmZisyblNrekV5eGFtdVhFZHpleitKMVpjQVU2cC9BOWhiUU1FUXdCM2lLOXIvVlFrQnY5ZldUVGdqRFErMFdPUFNkam5aZ2tsckRRR2pxMmxiajNoOXU0LzkrMmM4SnBUYnpybkRhV25KSWxOZGsxUkRBRU9FVEdyaXBwU3htbE5tMVhJbHdMRk9EQW5uczlHbTNyZ0kxUmF3Z3IrKzhkVnhLTFd5aXRlZUxCYmg3OWRSY3oycFA4MWNWVE9lUDhTYVJiSFhRdUpQQzFpUkVNQVVaUHcyc1ZHYnpqU0loYjBhY2FSSFgyM0s0eXUzYmtpYVZzTnEvclpjTzZIbHczMHZWZVNWRXVoUWp4cXY0ZkxUSWswelpDd3U1WFN0ejhENXY0ejl1M2M4NGxoM0htQnlhVHpEcjRBMEUxYzJRSVlMQmZSaTh0Z1pPeXdRVjhHT2d1cytHeGJuYnNLUERrbzd2WTNWbGs5NDRDTDIvTjRjUWtwVUpBc1JnaUsxZDdMR0V4cTJVYVVzcURVMkZXRlltVXRPallYdVRtZjlqTWYveGdHNWY4L1N6ZWRjRWtLR244WWppaHZZRWh3TDRZVmFpamx6NXBRd3dvYURhczdXYkZBOXZac0xhSFo1N3FvcWV6UkQ3bjQ3aXlJa3NzWWpHSlZwQk1PV1RxM0txQ0Yxb2k1V3UzSGVoUlhueWpkUlFzdTY0a25yRG8ybEhtRzU5NWp0L2R2WXZMdmpLYldZc3loSDBoU2sxTVdXUUlNQUlEVWtwald3S253UVlQTnEvdFljVkQyM240OTl0NTd0bHVCZ2Q4cENWSUpDeGNWNUpvVGFEUlNDRmVEWUt0S0FndWxjSTkybjQwZ2F0ZnMrZk1jV1ExTHRDVnYyaXRENWdZVlNJa0pBTEI2ai8xY01WNys3bm9pc001OTdKcE9KYkV5NFZZdGpBRU1LZ1lmcWh4WEluZFlGSHE4M24yd2QzYy9pL3JXZm5ZTGdyNUFNZVJKSkkyamMweFJPVWQxMW9UQklvZ1VKVExDcTAxU2tmZjBMWWxMUzN4UFhlZGtYRnR4QjVOdWQxZFBxR3ZRSWpJT3dod1hZbGxpMnBPWDZuOUo4UlFGaWxUSHhYZ3Z2T1Y1MW41aDI0dXUrWUk1aXpLNFBjRUU2cWliQWp3SmxMSHRpUER6KzB1Yys4UHQvQ3pIMi9pNVMwNWdrQ1J6amcwTnNXcVhaeGFRYWtjVUNxRlNDbUl4U3hhV3hOTW1aSms5dXc2L21KK0k4VmlRQ3J0Y095aUpsNjc4RW04cGpLODd1bEJDdm1RZU56aStZMTVYdHhTb21PSFIzZW5SOUVMQ1VPSXh5VnVUQ0NFMkc4eWhLRkdTbWhvZGxqemFCOVh2bThObi90bU84dk9hVU9YRllHdkprUlhxaUhBNnk0TWFzQnBzQ24wZU56ejdTM2NkZHNHdG16c0o1NndpQ2R0aG14Q0t5aVhRMHFsRU51V1RKdWFaTW1TVnRyYjYxbXdvSkZNeG1IeTVHUzE3MmZJT3hTTDRWNS9ocE5QenpJVUU1OXlaaU5DQ0RwMmV1UUhBemF1ejdOMVU1R25uOHl4YzF1Wk1OVEVZaEVaSUNMRC9zaWlUTDFOR0dxK2ZQRmFMdnowQUIvNTRpeGlNVWxRVXVNK0xqQUVHSG9SQTQyYnRNQVNQUEhRRG02NitpbldyTnhOcHM2bHNUa1dwVG9yRFdyNVFvQmx3YlNwYVk0L3ZwbGxTeWV4WUVHV3BxWVlBSjRYU2FCY3p2OGZnZTF3cjZvL0VMd2FKRmUrdEtIUnBxblpZZmJjSkFCOXZRRWIxZzJ5NnZFQm5ua3l4ODd0WlZRWTlRdlp0cWltUXZmRkd3Z0IyVmFYdTcvN01rOC8xc3ZYN3p5YXhqWjMzTWNGdHRINmtlUnhtMnc2WHNxei9PcW51Ty91cmJoeFNVdGJzanF3b3BSbUlPZlQyT0N5YkdrYlo1ODFuUlBlMWtwRHZZdFNtbElwcEsvUHF4aDVSZUh2aDRRUWIvRGlCb0VtQ0RURlltVFlzWmhneVlrTnZHMVpBd1A5QVd0V0R2RFFyM3ZZc0M1UGYxOUFPbU5oV2Z0R2hDRnYwSkIxMkxRMngxVWZlb1pyNzFoSXk3UTRYbjlROVdLR0FPTk02MXUyeEs2MytNMWRXN25wNnFmWS92SWdEZGxZTmZ1amxDYVg4OGxrSE43L3ZzUDU0QVd6YUc5dlFPdkk2UHY3dldwZi9zRXlraUZQTVBUOXd4RHlnd0ZhZyswSWxwMmE1YVRUc216WlhPRCtuM1d5NHFGZUJ2b0NVaGtMS2ZkTkdnV0JwcTdCNGFYTmVUNXgraW8rYy8xY1RqcXZEYThyd0hLRUljQjRRZUFyWW8wT3BYNmZyMTc4S0wvNnhRdTRNWXVHcGhncWpGN3hYTTRua2JCNVg4WHc1ODl2d1BNVUF3TUgzK2lISTRTb3NFSlZ5SUNHR1ljbitOc3Z6ZUNzODFxNC8rZWRQUEpnTC9uQmdIVEczcWRnT1F5andaekNZTWgxbjFnUEdrNDZ2dzJ2T3hoM2NzaWVpTXZtbGRMRW1oMmVlcVNERzY1YXhkcW5PbWxzaXFOVTlPODlMNlJRQ0hqUHU2ZHg2YVh0ekoxYmorOHArdm9pd3g5TGNtQlBNcFJMaW1KUk0yTm1nczkrYVFiblhOREt2OSsya3o4OTBFc2lKWW5GNUlobGtRbzFia3dTMm9KclAvbmZmSmtLQ1hyR2x4eXlKMXl6R3RFYzdrKyt1NEdicjExRGY3OUh0aVZCR0Nnc1M5RFRVMlplZXdOL2M5azhUajVwRWxLS3Fzd1o2My93UWthbmhJYUlNTzN3T0ZkZU01T1RUMi9remgvc1pPdW1JdlZadXpwblBKSjJDbWtKWW5ISnRaOWN6NWNGblBUZXRpZ21HQ2VlUUU2b1lGZHJuSHFMNVY5WnpaYy85UmhCcU1uVXUxV0Q2T3dzY2VHRmMvamU5NVp5eHVsVEtKVWlUMkJab3FaeTRrSldSaTRMVWJQZDBsTWJ1ZUU3Yy9tckMxcnA2ZlRSZXVRVFkxcHBMQnRzUi9MdHF6YlJ1NjJFbTdGUW9UWUVxTFdlZkxmUlp2a1huK1NXRzUrbDdiQVVsU1VMREE3NldKYmc2OWNkeDk5ZHVZQkV3cUszejBOS1VkUEZJQ21qdE90QVgwQXNKcm44aXFsY2VjM2hTQXZ5dVhERUhrMkZFSXRKQm5NQlYxMzBMRDBkSGxaYzduUGR3UkRnclhyNTBUaU5Oc3V2V3MwdE42MmxxVFZPRUNoc1d6SXc0TEZnUVphYnYvMTJ6anR2Sm9PREFiNGY5ZjZNRjFpV2lPb1grWkMvZkY4TDE5dzRoL1lqVStRR1F1d1JabmJDU3AzaCtmV0RmT21pWndnQ2pYVGtxRGZ2R1FJY0JObmoxdHNzditwSmJybnBXWnBhRTZnd21wWHQ2Q2l5WkVrcjMvM09PMWl3SUV0WFZ3bHJuRTVNRGNVd1BWMCs3VWVtdU83YmN6ajZ1RFJkdTcwUmU3a3cxTlJuYlRZK2srTkgxMi9GY2dXNnhyMkFITS9HRDd3cWUyNWFTMU5MSEJWR0E3ZjV2TS9sbDgzam43KzVCTXVTNUhJK3RqMytGYUZ0Qy9LRFVjL1NsMjZZeFY5LzdEQUsrYkNTVFdJRTZXTk5mYVBESFRlL3hHUDNkZUprN2YwYTdUUUU0T0FQclZncHlmLzc0cXV5WjBpekRnejRmUGF6Ui9INUt4ZGlXUUxQQzhkdHBmUE5KSkh2UjE3d3NzOU41WkpQVFdGd0lOeW56N1loNi9ETkwyemdoVFU1bkJvT2l1VjRMWEs1V1p1ZmYzOGpOMy9qYVpyYkVwWHRhNEpDSWVEem4xL0FSeStaUzNkbkNhVW01aTVPS2FPR3Z1NU9ud3MrTW9sTFB6dVZZaUVjMFdjeGxFVWE3QS80N2xlZmo0emZFalY1RzEyT3gvYUdXSVBETTQvc1p2bDFhMml1NVBnZFI5TFZWZUlqSHo2Q2ozMjhuZTd1OHJqVisvc2NGM1Q3ZlBDamszai9SWlBvNmZaSEZCaXJVSk5wc0ZuNWNEZjMzcm9OcDc0MnZZQWNiN3BmMklMQkFZK3ZYN1dTZ1g2dk9ralMxK2V4Yk5ra0xybGtMbjA5NVFrbGVVWWlpZnA2QXo3dzRUYU9mMGM5QTMwakszU0ZvU1pUNy9EajVTL3cwcG9jVnJMMlVxTnl2T2wrdTg3aTJpdWU0Sm1uT3FsdmpKcmFjam1mQlFzYVdYN1RDYml1aFZMYTdNWjVuU2ZRb2NaMkpGLzVwMW5NT3lyRjRFQXd2QnpTbGFBNkYzTEwvOTJDakV1RThRQnZvZTV2dFBuZFhTOXcveSsya20yS3BJOVNta3pHNFF1ZlgwQWlibE11aDJiLy9odFdqd1ZlV1JHUFcxejYyYW1rTWlON0tNSlFrNjYzZVdwRkw0LzhkQmQyblYxVFVraU9sMGt1SjJYUjlYS0JmNzU2TmJHWWhkWWF5eEwwOW5sODdvcWpXTHk0bVlHY1o2VFBNRklvbHd0WWNHeUdqMzk2S3YxOXdZaGFKb1lXZ1gzL2hxM2tlM3lrVXpzQnNSd3ZIWjVZZ3VWWHIyYmJ5NFBFNHRIR3RaNmVNdi83b2ptY2ZmWjB1cnZMRXlMUHp5alVDZnE2ZlU3N1gwMmMrNkUyK2tmUS9hbVZKcEd5MkxhMXlJTjM3OEpLVy9zOGxXWUlzSjhJUTQzZGFMUG1rUTd1dVhzTGpkbFlOS0ZWRG1sdmIrRHl5K2JoZWNySW5uMlVRNzZudWVqU3ljeWFtNkJjRG9lVlFrcEZyUkwzL0dnYnhVNGZ5NjBOTHlCci90Q0VJeG5zOXZpbnJ6NVpsVDVTQ2dyNWdNc3ZtMGMyRzhmelFoUDA3bU5RN0htS2hrYUh2Lzc0WklyNTRSOFFyU0FXbDd5MHFjQURQOXVGbGFrTkx5QnIrL1ZYV0JuSmZmKytoVFVyZDVOTU9ZQWdsL041ejd1bmN0SkprK2p2TDJOWlJ2cnNUend3MEIrd1pHazlwNXlaWlRBM2ZQSkFLVTA4SmJuM1I5c1kyT2xodTJPL1dVN1dzdTYzWFl2Q2JvODdidHRBdXM2dHp2QW1FalovOHpmempPd1poUTlaU3NHSExwbE1QQ0dIelFwcERmRzR4UXNiQ3p6MWNBOHlNL2JyQXJLV3RiK1ZsdHg3MTVab2IwOGw4TTNsZk00NFl3cEhIRkZQUGg4WUVoeFF1NFNna0ErWmVVU0NrMDVySkQ4Q0w2QUJ4eEU4OU1zT3RLY1o2eCsvckZYdGJ6dUNjbi9BM1QvZVNDSmhWMWVEWnpJT0g3eGdWaVh3TlVZOEdqMUR2cWM0Njd3V1VpUEk3cWhRazh6WS9OZUQzVHo5eHg3c3RJVUtEUUZHUGU4djB4YlBydXppcFMwNVlvbm85Ui9JZVp4KytoVG16MitnV0F5cXcrSUdCeElRQzRwRnhSSHRTWmFkMXNoZ2J2aTBxSlJSWVhMRmI3ckFGb3psUUtBMjMwZ3BDRHpGYmYreWppQ0lYdm9nMERRMnhQamdCMmZobGMzclA5cFN5UE0wWjUvZlFuMkRNMnovZjVRU3RWbnpXQytsb1pTb0lRQ2oxdS9qSkMxZVhOZkhxc2M2U0djYzBGQW9CQ3hjbUtWOWJnTUY4L3FQZWxxMFdGVE1PaUxKdktOU0ZBcDdUNHRxQlc1TXN1MkZBdXVmSEVBbXgyNm5hRTBTUUR2d3lFUGJLZVI5TEV0V0Y5Q2VmZGIwNmtFNmc5RW1nVVpyemFsL21VVmFJeU5ONkdzZWY3QVRMY2R1VFV6V1huNWFJb3FLUC8xK080NGowVnBUTG9kTW5acmtoQk5hS1pWQzgvb2ZwRmlnWE5Jc09yNk95Vk5pZUdXMTE0ZEdLVTBzS1ZuemFCL2xIaC9ISHBzMUFWbHJ3YStWbEd4NXJwLy9mcmFIUkRMYTYxVXFoUngvZkNzTkRXNTBLZDNZLzBHUlFiNnZxR3V3T1hweGhuSnArT3F3NDBpNk9zcHMzMUpFeElRaHdJSExIeEN1NEk4UHZNTGdRTlRacVNzOTZjdVd0cGsrLzBOQUFxVTB4NTlZajJXTDZPYngzdHBVTE1GQWI4RG10WVBvMk42LzNoQ0FrZXBLeFhQUDlsUU9QZ3ZLWHNqVXFXa1dMR2lzWG1neE9IalpvRkpKTWUvSUpKT254dkM4dlh0YlhXbXBlUHJQdlFqRm1CeVdrYlZVL0hKY1Nha25ZTzJhTGhLSml2d3BCaXhaMGtLMktZN3ZLMk9sSE96QkkwMWoxdUdZNHpLVWlzTmtnelE0cnVDRkRYa0d1OGJtbkVBTkVVQkRYTEJ1VFRmZG5TWHNTZ0JzV1pKNTdmVTF1WkdBbXUwUUVzeWFtMEJhZTlmMVdtbmNlSlFPSGVqMHNNYmdKcm1hOGdEWWdvNmRCUVp6ZnZVQ2l1dGFMRmpRaUc5YUh3NlpEUEk5UmZ1UktXS3VSQTFqMFVObnBiWStOd2cyaGdBSE5MZ2R3TXJIZGxhUFVBZUJwclUxVGliajFNd0UwbmhBR0dwU2FZdW1Gb2ZRMzN2aVFVcEJLUi93NHNZQzJHTXZFSmExMVA0c0xPanVMRVV6cUNJNlpERmxTcExKazFPVVBaUC9QM1RETXBxMnlUSGFEblB4UEwzWHozMW9hQ25YNzZPRHNaZWxrN1dpLzZVcjZkdFZZdWYyUEc1TVZxK256NWxkWjZxL2I0VTMxcHJEWnllR2xUUmFhMXhYOHRTS1huUis3SjFkbFRVeit1aEt1cllYZUhscnJqTDZHT1drNTg5dnFOWUREQTdoZzJRSjVzeExqcmoyWWp0aVRPWkJhMGNDS1VpbUhkeVlGZDN5cWhCanVNUFRCZ2NQcGFJYThjTXpWaCtvbXBGQTJQRGNzOTBVQzM3MXhYY2NRVHB0ajhrSzQwUTRQSkpNV2RqT2NLbFFpTVV0WHQ1U1lOTXpPYXd4MWhrcWF5Y0ZDaHZXOVZJcVJzdWFmRi9SM0J4bjBhSm1pa1ZUQVQ3VXFkQnlVWEhrMFdtYW1wMWgrNitFQUsrc0tCYkNNV2R4TlpVNWQyT1d5ZlRVY09BOEZoOHBXV3ZCbDRHQkdZazBNREFFTURBd0JEQXdtRWp6QUNZQU5wakFCUERLb1FtRXFlR2J6Y3BNaE8xM0NvMEE1aDNWU0R3UlhTQVpPbnEzWmswWGlZUlZjN2VwcVBGVFZMR0VaUDB6ZzNSMytaWGxCSHMzZmpjbVNTUXRVSVlBK3lkOUFwaS9zSWxFTW1wOWpvYTBOWU9EWmdmUVcvVW9GZklod1REdDBFSkN1UlF5ZlhhU3VVZG5DQXZobUdxSXF4MEpKS0V3Nk9PVncrcmdpeENRU0ZqR0d0OGl4Qk9Ta2I0OVkvV05xaGtKRkhxSzVpbEpwcy9LVkMrV1NDbDQ3cm0rcWtjd09IUWVXWVdhNXpjVWtISmtuYmlCcjhmazJHck5TQ0RsS1JvbXhaazhKVlZaeWhRZHVYNSt5d0JDbUhib1EzNlBXUWhlM0ZJYzl1RVJRdUI1aW1PWE5TSlNjc3l0U0t3ZENTUkFoOURVRXE4TVpJRHJXbXpmWG1Ebnpqd3gxeklab2tOay9LNHI2TmhacG1PSGgrdnVmY3h4YUpWTnB0NUIyTUxNQkIvWUZYaFljdUprZkU5Vkx4cnUzbDBpVnhtU04rQ1FuVS9LRDRaMGQvcFl3N1JEUjJlVGJBNXZUMEtneDF6Q29xYUc0Z2swYlpPVHBDdEQ4SllsOEx5UXRXdDdjVnhaSFpReDRPQnU1M1lsRzlmbktYc0tPWXhCRDIzdW16VS9EUUZtSnZpQVVxRWx6VkdMbW1ocWlSUDRVUndRaG9vTkcvdkg1dHF4OFJvRW85bTZxWWdLaDB1QkNyeVNZdXJNSkhVdEx1RVkzTnRhVXg3QTl4VHhyTTJDUmMwVWl3RUE4WVROeXBXZDlIU1hjQnpUMm5Td1lUdUMzaDZmcDUvTVZRL243ZjNQVEROelhvcDBzNFB5OVpoN3FHUXQzZ1dldnpDTENxTjk5VEhYWXR1MlFkYXU3U1VlTnhYaGd5MS80bkhKaHZVRmRtNHI0dzV6QmxVUTdSQTY1dTJOWS9aR2dLeTFnMjNhMDd6empHbWs2OXhxL2o4SU5Dc2U3Umh4VHRwZy94OGdLUVdySHVzbkhDYWdGU0l5L3JwR215TVdwQkZsUFNZcjlyWFZEU29GWVVFeGUzNDlmN0V3UzdGUWtVRnhpMVdyZHRQWDV3M2JsMkp3QU11SkhjbEFYOEF6cTNQRTRzUGZBUFo5UlhOYmpDbXpFK2p5MkN4V3lscThEcThUa3BOUG4xSVp4aGJFWWhiYnRoVjQ0b25keE9PbUhuQ3d4bEZqY2NHYVZRUHMzRjZ1TENjYlpuQytvRmkwdElGWTFzRVBsQ0hBYUcwa0VENmNkT29Va2ltSE1GUlZkM3ZmL1MrYnF2QkJJMEIwaitHaFgvZU02TzV2Rks4SjNuRmF5NWk5RFZDekJQQUxJWWNmMWNEeEo3WXhtUE5CUURKcDgreXpQV3pjMUVjeVlYWUZqYmI4U1NRa1d6Y1gyTEF1VHpJNVRQWkhSbXRRcHM1TWN1UnhkYWd4MWdGYSt5T1JTbU83a285OTZpaHNPeXFBMmJhZ3Q2L01UMzZ5RlRkbWltS2puZjF4WGNGOVArdWt2OC9Ic3NXd2oxU3hFTERveEViaUxRNmhadzVsajNvd3JBWkRGaTVwWnNic0RPVmlpTlpRbDNINS9lKzM4OXh6ZlNTTUZ4ZzE3WjlJU0RadkxMRGl3VjdTR1h2WVZmUktnZTFJbHIybkdRTE5XRzdWbGJVNmpCSDRtbGk5elFVZmJxZFlEQkFpNmxISjVYeCtjdmRXWE5NYU1XcUhDUjFYY3YvUE84a1Boc1AyWEVsTFVNZ0Z2TzIwSm81NVo1WmdNQnpSWFdGREFQYTlJU3NjVkx6M1E3T1ozVjVQcVJSNWdVekc0WUVIdHJONWN6K3BsRzBLWXdjb2ZaSXBpeGMyRjNua3dWNVNtZUVMallKb1V1L1VjOW9Rcm1Dc2YveXloaHRTQ0x5UVpLdkxSUitieCtDQWg1UWkwcC9GZ085OWI0TXgvbEg0a0pYUzNIWDd6dXBCdkwycFNpR2ltODB6MjVNY2Uwb1dsVk5qZm1lcnJPMjJYRW1ZVTV4OTRXd1dMV21sa1BjQlRTYmo4SnZmYnVPUlIzWlJYeDhqREkwV1lqL09JTlhWMjZ4OHRKK0hmOWREZWdTdmYzUU9TZkhlaTZkU045a2w4TWIrMFhKWjY0UFpvYTlJTjduODNUWEhWVVlsUmNWMTI5eHk2d1o2ZWtxNHJtVnFBL3M4OUNMcDYvVzU4d2M3U2FTR3IvcEd3KytLR1hPVG5ISCtKTUpjV0JNekduSThER2NFdlFHTFRtcmozQXRtMDl0VFJrcEJQR2F4Y1dNZnQ5eTZvUklRR3dhTW1BQks0N2lDTzc2L2s2MmJpdFdMUE1PblBrUE92WGdxaWFIVXB6Q0xzUTVaUEVDb3VlTHF4VXlkbnFaY0NZaXoyUmovZHNmejNIZmZ5elExeFFnQ0k0V0dReEJvR3BvY0h2eFZOL2ZjMVVGOWR2aTBwNUNDWWo1azZxd0VwMTB3aVhBd3JKa0p2WEZCQUNFRmZqNmtlWHFTTDF5OXVDcUZ3bERUMk9CeTAvSjFyRjdkUlYzR05lZFVoOUg5bVl6TjJxZHkvT0RtYmRRMzJDTWFZaGNpdWdSejZWV3pTR1hIWnQvL3VGK09henNTcnpmZ3pBL041S3ozejZLbnU0aGxTNlNNYWdQL2ZPTmFpcVdBV016TURMenBWZmVZcEZRSytmNjN0cEhQaFNOcUw3Y3N3V0Ivd0xITEdqbnBBNU1JQm9JeDIvWXc3cmREU3lrSUJrSyt2UHdFamo2MmhmN2VNa0pFdFlHMWEzdTU0bk5QNEhtaG1SdDRvNFVEbGlEd0ZWLzd1NjFzV0pjblhUZUNHa3BsRmlPVnNiajhIMmVqU2dwdGx1TysxZGZrTmVrNmwzKzRZUWwxOVM1aG9GRkswOURnc21MRkxtNi9mUk1OMlppUlFxK1RQZzJOTmovOWNRZXJIdStucnNFbURQU0lFaEM1ZnA4UFh6R1RHWXN5aEFWVmM3ZmF4dDBRcmJRRTVUNmZvMDlxNVlvdkxhS3JNNUpDUTBmMS92WEhtN250Qnh0cGFvcElNSkU5Z2RhUjhXZWJISDd5dzEzODRvNWRaSnVjYUl2YkNEN25YRi9Ba2xPYWVPOWxVL0g3dzVxU1B1UDZRSWJ0U0x5ZWdQTXViZWZUZjM4TVhSMUZMRHRhNEpSTTJ0eDQ0MXArZVBzbW1scmlTTW1FakFtVWluTDNUUzBPZC8vckxyNy9yVzBra2lPTGo0UUFGV3JTOVRhZnVHWk9aUGlocnNuTkhEYmorSlJubUZmODdmV0wwVnB6eTAxcmFXcUpvNVNtcnM3aFc5OWFSMTl2bVVzdW1ZdnJXcFRMNFlSWnJoV0dHdGVWK0lIaTFwdTI4WXM3TzBqWFdmdjAyWFozZWx6L3J3dVp1U2lEMXgwTTJ5SnRQTUJic1VnTDhIb0RycmorT0M3LzNBSzZPMHRJSy9wZlRxVWNicmwxQTErNGNpVmhxTWhrbkFsUkp3Z0NUU29kdmZUWFhiV1ZPMi9iUVRJVkZicEdJZ2R0UjlEZjYzUFJwMmR3NHRrdCtEMjFhL3pqL2thWUVDQ0Z3T3NQdU9LRzQ3ajhjd3ZwM2wxRVdsRzdSRnRiZ3BVcmQvT0pUejdPMnJVOU5EZkh4MjFjVU5YN3pRNGIxK2Y1MG1lZTU1a25CMmx1ZFVjc0FTMUwwTjhUMEg1MGhvdS9PSXZRMDRnYVAxQXVKOFNCWmdSK2I4QVZOeXlPUE1IdUVyWXRDUUpGWFozTDJyVTlmUG96ZitZWFAzK0pWTXJHdHNXNHloS0ZvY2EyQmFtVXhhLy9vNU92ZnY1NU5xN1BrNm16UmhUd0RobC9zUkF5NThnMDE5MXhOTFl0VUw2cStiWDBjcUpjTXhGQ3ZDcUhQcitRamgzNTZrdWZUanVFSWR4MHpTdmN1dndWeW1WRlhVT1VCNi9sb1JxbG9nQy9yc0dtWEZiY3Nud2IzL3pxaTZnUVVobHJ4Q1NYRnBUTGluVEc1b1k3RnBKdGN3bEx0WmZ5bkZCQjhKdDZndjZRSzc2Mm1NblRVOXg4M2RQMDlaWkkxN3RrbldhU0xVbCtlWGNIYTlmaytPdVBUMmJKMGdha2pFNEJTU0VRc2xhcXVxQjBOTXlpRkR6NlVDOTMvaUJxYk11Mk9LaFFqM2hQdjVDQ01OQUV2dUl6Tjh5bmNXb2NyNysyZGYrRUpFRFZFMmp3Y3dFZi9NUThqcGpmeUkxWHIyTDdob0M0azhBUFF1b2JIWFpzSy9PMUs3ZHk4aG1OWFBpeHlSdytKMEhnYVlyRnNVMkVJY05QSkN4c1YvRGk4MFgrL2JhZC9PbUJYaElwU1gzanlBcGNyOG1raFpweVNmSGw3eHpKU2VlMTRmV01IK09mY0FRWUt0OUxTMURzOEZoOFNodi9lTjJKZlBiY3A5QWlPdUVUaGhySEVjU3lOby85c1pmVi96WEFTYWMxY3RaNUxjeHBUK0o3bWxJeGhJcXNlcXMxY0pTOWlYNzJlTUxDY1FYUGJ5eHcvODg3ZWVUQlhrckZrSVpzSk9mMkphNlJWclRaT1F3cXhuOStXMDJuT3cwQlhyL21MMkVSRG9SODY2ck5TQ0hSZTNTeERHVk1VdW5JY0g1N2J4Y3JIdXBsMmFtTm5IVitDN09QU0tKMU5QNDNkQ1h4VUpKaHlPaTFqdEtTOGJpTkVMQmxjNEg3ZjliSmlvZDZ5ZWRDVWhtTFZOcmU1NEIrS09CTjE5bDg1dnI1MGN2ZkZXQTU0NjlPWWsvWWdZK016WTMvNXptZVg1OGpYZSs4b1NZZVNnL1dOVVJHOUp0N3Uzajg0VDdtSFpYaTFML01zbWhKSFhYMU5rcEZwMEQ5U2tabEtEZ2NMVUlNQmV0RFA0L2pDR0p4R3lsaG9EOWd4V005UFBUckhqYXN5OVBmRjVET1dOV2ZlVityM0xZZDVmbm5ISm5oMmpzVzBqSXRIc2tlWjN3V0NTY2NBVlNvY2JJMmoveTBnMS9kdFlPNkJtZllnSERvQmExdnNBa0N6YXJIKzFuOXhBQ1RwOFE0K3JnTXg3K2pqbmxIcFdsb2pENU8zNHZraHUrcjF4aXdxQVNWdzVGVHY2Nlk1emdTeXhJNGJ2UVArbm9EbmxuZHg2ckhCM2pteVJ3N3Q1ZFJvU2FSdEtpdkdQNit2dnFpSWczN2VuemFGMmI0K3AxSDA5am00dldOUDlrellRbWdOY2lZcE92RkV0LzcraGJpQ1F1OWovbDBJU0Nkc1FGTjV5NlBYLzJpazkvZTI4WGtxVEdPT1M3RHJMa0oybzlNa1VyYnRFMTIwVnBYV3l3aVQ3SDN2R29zYmxYdklFZi9QVUhIVG8vOFlNREc5WG0yYmlyeTlKTTVkbTRyRTRhYVdFeVNUTXJxQm9mOXFWOVlWaFRzOXV6MnVQRFRNL2pJRjJjUnN3WCtZRGl1algvaWVRQWQ1YlMvZnZsNlh0eVFwMjFhSEwrczltdGZEb0RqUmxKRTY0Z005LzI4RTh1S0JzcWJXbHphRG5NNWZIYWNPZTBwU3FXUVpNcmlxR1BTYjFwcEZnTCthOFVnaFh4SVBHN3gvTVk4TDI0cDBiSERvN3ZUdy9NVVlRanh1Q1Naa3RVRkFGR3RRdTlmYXJqUzFabXB0N24yUnd0WWRrNGJ1cXdJeXFvbXV6c05BWWJKQUlXKzV0SnI1dUJjdjVVbi90Qk5wdDdaNzhydlVMRDhXakpFQk9udTlOaTV2Y1NhbFFPUmdXcU41VWlhbXAyOWZzL3VMcC9RVnlBRVVrWkc2cm9TeXhhazNDallQUkNqZjgweWdVQXowT3R6M0NtTlhIYk5FY3habE1IdkNSQ1YvVW9UQVJPdURxQkRtTCs0bnV2dU9wcDdibjJGTzVhL1NLNC9JRjFubzlGb2RXQzlObnMyalRtdUhhVkw5L2lhM0VDdzErK1RTbGtJWVZFMTd6MHlQcVBSdGkwa0NBUzUvb0JVeHVLVFg1dkR1WmROdzdiRXVFeHpHZ0s4MGVHMmdRQXBCZWYvN1F3V241emwxcTl0NGVuSGVwRUM0aW1yY245c2xQTHpiNUJsR1ltOE9paVZjRXRReW9jb0RZdFB6bkxaVjJZemExR0dzQy9FVjJyQ0dmK0VUWU1PYVZ1L0oyRFd2RFRmK0k5aitNUGR1N2o5RzF2WnZyVklMQ21KSjBhSENHK1cwanlrTFNDV29GUU1LUmNVVTJZbHVPVHZaL0d1Q3laQlNlUDNSRVBzRTBIdkd3SzhBUkdDVW9ndXdidk9uOFRiVG0zaWR6L2R5Uzl2MzhGTG0vTWtFcEpZMG9wYURHcHNha3pLcUdXalhBZ3BGaFV6amtoeHppV0hjZVlISnBQTU92aDlBV0tQeDJDaVlrSVRZS2paU3dCK2YwQWlMam4zVTlNNS9mekpQUEN6WGZ6bmo3Yngwc1lDaml0SXBDMWtKZXN5VnVjRmhJZ01YMmxOWVREQTl6UXoycFA4MWNWVE9lUDhTYVJiSFhRdXhPOFBKcnpoR3dLOGdUY0lRMURkQWFtRXhmcytOWTB6MzlmR3lvZDcrTU12TzNqaXdXNENYeE5QU3R5WVZjM0d2TlZrR0RKNnJjRXJoNVFLQ3RzUm5IQmFFKzg2cDQwbHAyUkpUWGJST1lYWFBiSGxqaUhBQ0l6SnFxUkVWWGRBTW0zenpnOU40cDN2YjJQMUgzdDQ3TGRkckhtMGgrMHZGQ015SkNSMkpVVlo3YzlSQjl0anZkcDNGQVlhdjZ3b0ZTT2puekl6d2FLbFdVNThkek9MMzVrRlY3ekc4Q2Rpa0dzSWNLQkU2QW1RUXJENDFDWVduOWxFYWJmUHV0WDkvUG1CYmxZLzJrTlBoMGR2cDRkdFMyeFhFSXRKa0pWK0lCMjFKKy9acmp4U0k2OTZKaEhsVVpYU29LQmNWQVNlanFiWkdoMWFwOFZadkRUTDI4OW80cWpGOWNSYkhRZ2d5SVdvUVkyVXh2QU5BUTZFQ0VNWm80RUFEY1FTRnNlZDBjeHg3MjZtMkJPd1kydUJUYy9tV1BQblBsN2FrT2VWRndxb2txWllpTm9JM0ppTUV2b0NZbkVaOVFLOW1Xd1NVUzlRdWFpcXY4Y3JLOElnNnZPUmptREdFU2xtekV1eDZPME56RjJZNGJCWlNSSlpHeFRvZ3NMcmVUVzR0VENHYndnd3lxblRNTlRvL29nTWNWY3llMkdHMmNmWDhaNlBUcUhVNmJON2Q1bVhOK1RadWlsUHZpL2dxVWQ3c1NzUzZlVXRCYnhTaUpUL2t3T0NxRmZJalVzT241dUs3cUFGbW1PWE5wSnFzSmsxTjhYMGVTbGFXMlBFVzV6b041UTEydE40dlVHMTBjNHkrdDRRNEtCUGxlMUpob0pDNXlON2RCT1M2WE5TVEorZlpxa0ZoQkFPaHRXdXpvM1A1aWdWd3FvOGVqMERsTkxFa3hidEN6T3ZIcHRPVzFENVh2Z2E1U3Y4M29pQVEzTUl4dWdOQWQ3U1lYdXFyZGFnQW9VdVJObWhvU0xVVUJndy80U0dhQTFCUmQ3d3VrYTl5QTFBV0hqMUZMdmZIMVMvbDZqRUF5YUxZd2d3ZHBkeGlhalg1bzNnRHdiRDk2OEpYdE9JWm96ZEVHQmNyV3MwTUh1QkRBd01BUXdNREFFTURBd0JEQXdNQVF3TURBRU1EQXdCREF3TUFRd01EQUVNREF3QkRBeW9wVllJdmNjdkE0T3hibE9qVGdDSHFCbk1NWDl1Qm96dVdqOW5yQk5BQUoxYW9WUkFpRGJ6U0FhajVnRXNCTjFhamJwTjJhUDlRNjRLUEpReGZvT0RRQUpKTk9hcHg3SUVzcXUrd01EZzRCQmh6QWZCQmdhWU5LaUJnU0dBZ1lFaGdJR0JJWUNCZ1NHQWdRRTEyQXFoSytjN2EyeEh2Z0VUOGdhMFZuckU2VWg3Sk1ZdmJFRXM0MVQzNlJzWWpHVUN4RElPd2hZaklvRlkwbmFuM2x0dmd3bzBpUWFYMWlQcmh6MG9iV0F3VnZhNDdsN2ZUN0hQUXc1REJIdll1N3Eyb05UbnNlWEJYYWJBYTFBejVXSW5ZUTFyL1BzbWdlcE5mNmRCYlVtaGtVaWdrUWZCUnY0WW1EU29nWUVoZ0lHQklZQ0JnU0dBZ1lFaGdJR0JJWUNCUVUzaS93T0tSMmYxdythN1l3QUFBQUJKUlU1RXJrSmdnZz09IiwgInNpemVzIjogIjE5MngxOTIiLCAidHlwZSI6ICJpbWFnZS9wbmciLCAicHVycG9zZSI6ICJhbnkgbWFza2FibGUifV19">
+</head>
+<body>
+<style>
+@font-face{
+  font-family:'PixelMplus10';
+  src:url(data:font/woff2;base64,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) format('woff2');
+  font-weight:400;font-style:normal;font-display:block;
+}
+@font-face{
+  font-family:'PixelMplus10';
+  src:url(data:font/woff2;base64,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) format('woff2');
+  font-weight:700;font-style:normal;font-display:block;
+}
+
+/* ---- NSO palette, lifted from 202020-Rule-NSO/ui_elements.py THEME ---- */
+:root{
+  --border:#3617A5;
+  --gap:#A2E9F1;
+  --gap2:#E8E0F7;
+  --fill:#EFCFED;
+  --panel:#FCF0FC;
+  --accent:#4D1DC0;
+  --hover:#E3A6ED;
+  --bar:#E3E2E0;
+  --iconhover:#3A1490;
+  --ink:#3617A5;
+  --ink-dim:#7a5fd0;
+  --shadow:#3617A5;
+  --onborder:#FCF0FC;
+  --px:'PixelMplus10','Courier New',ui-monospace,monospace;
+}
+:root[data-t="dark"]{
+  --border:#000000;
+  --gap:#2a2a2a;
+  --gap2:#2a2a2a;
+  --fill:#242424;
+  --panel:#2b2b2b;
+  --accent:#ffffff;
+  --hover:#4a4a4a;
+  --bar:#141414;
+  --iconhover:#acacac;
+  --ink:#ffffff;
+  --ink-dim:#acacac;
+  --shadow:#000000;
+  --onborder:#ffffff;
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;height:100%}
+body{
+  background:var(--border);
+  color:var(--ink);
+  font-family:var(--px);
+  font-weight:400;
+  -webkit-font-smoothing:none;
+  image-rendering:pixelated;
+  overscroll-behavior:none;
+  -webkit-tap-highlight-color:transparent;
+  -webkit-user-select:none;user-select:none;
+  letter-spacing:.06em;
+}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit;letter-spacing:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+
+/* ---- the nested-frame chrome from the widget ---- */
+.frame{
+  min-height:100dvh;
+  display:flex;flex-direction:column;
+  background:var(--gap);
+  padding:calc(6px + env(safe-area-inset-top,0px)) 6px calc(6px + env(safe-area-inset-bottom,0px));
+  border:6px solid var(--border);
+  overflow-x:clip;          /* backstop: nothing may scroll the page sideways */
+  max-width:100%;
+}
+.titlebar{
+  background:var(--border);
+  display:flex;align-items:center;gap:8px;
+  padding:7px 8px;
+  flex:none;
+}
+.titlebar .sq{width:13px;height:13px;background:var(--accent);border:2px solid var(--onborder);flex:none}
+.titlebar h1{
+  margin:0;font-size:13px;font-weight:700;color:var(--onborder);
+  letter-spacing:.16em;text-transform:uppercase;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+  flex:1;min-width:0;
+}
+.tbtn{
+  width:26px;height:24px;flex:none;
+  border:2px solid var(--onborder);color:var(--onborder);
+  font-size:13px;line-height:1;font-weight:700;
+  display:grid;place-items:center;
+}
+.tbtn:hover{background:var(--iconhover)}
+
+.panel{
+  background:var(--panel);
+  border:4px solid var(--border);
+  margin-top:6px;
+  flex:1;
+  display:flex;flex-direction:column;
+  min-height:0;min-width:0;
+}
+.screen>*{min-width:0}
+.footbar{
+  flex:none;margin-top:6px;height:16px;background:var(--gap);
+  border:3px solid var(--border);
+  display:flex;align-items:center;gap:4px;padding:0 4px;
+}
+.footbar .blk{width:26px;height:7px;background:var(--fill);border:1px solid var(--border)}
+.footbar .dot{width:6px;height:6px;background:var(--panel);border:1px solid var(--border)}
+.footbar .grow{flex:1}
+
+/* ---- chunky NSO button ---- */
+.btn{
+  background:var(--fill);
+  border:3px solid var(--border);
+  color:var(--ink);
+  font-weight:700;font-size:13px;
+  text-transform:uppercase;letter-spacing:.14em;
+  padding:10px 14px;
+  box-shadow:4px 4px 0 var(--shadow);
+  transition:none;
+}
+.btn:hover{background:var(--hover)}
+.btn:active{transform:translate(4px,4px);box-shadow:0 0 0 var(--shadow)}
+.btn:disabled{opacity:.45;cursor:not-allowed;box-shadow:4px 4px 0 var(--shadow)}
+.btn.primary{background:var(--accent);color:var(--panel)}
+.btn.primary:hover{background:var(--iconhover)}
+
+/* ---- screens ---- */
+.screen{display:none;flex-direction:column;flex:1;min-height:0}
+.screen.on{display:flex}
+
+/* editor */
+#editor{overflow-y:auto;padding:16px;gap:16px}
+.lbl{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.18em;color:var(--ink);display:block;margin-bottom:6px}
+.hint{font-size:10.5px;line-height:1.75;color:var(--ink-dim);letter-spacing:.02em}
+input[type=text],textarea{
+  width:100%;background:var(--panel);
+  border:3px solid var(--border);
+  color:var(--ink);font-family:var(--px);font-weight:400;
+  font-size:16px;padding:10px;line-height:1.7;letter-spacing:.04em;
+}
+textarea{min-height:170px;resize:vertical}
+input:focus,textarea:focus{outline:none;border-color:var(--accent);background:var(--fill)}
+
+.plist{border:3px solid var(--border);background:var(--panel)}
+.prow{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:10px;align-items:center;padding:8px 10px;font-size:12px}
+.prow+.prow{border-top:2px dashed var(--hover)}
+.prow .nm{font-weight:700;text-transform:uppercase;letter-spacing:.08em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
+.prow .du{font-size:11px;color:var(--ink-dim)}
+.prow .st{font-size:11px;font-weight:700;background:var(--fill);border:2px solid var(--border);padding:1px 5px}
+.prow.bad{background:var(--fill)}
+.prow.bad .nm{font-weight:400;text-transform:none;letter-spacing:.02em;font-size:10.5px;white-space:normal}
+
+.tot{display:flex;justify-content:space-between;align-items:center;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.12em}
+.tot b{font-size:20px}
+.row{display:flex;gap:8px}
+.row>*{flex:1}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{display:inline-flex;align-items:center;gap:6px;background:var(--fill);border:2px solid var(--border);padding:4px 4px 4px 9px;font-size:11px;font-weight:700}
+.chip .x{padding:0 4px;font-size:12px;line-height:1}
+.chip .x:hover{color:var(--accent)}
+
+/* runner — reference-inspired workout display */
+#runner{
+  align-items:center;justify-content:center;text-align:center;padding:18px 12px 28px;
+  position:relative;overflow:hidden;background:#f5f5f6;
+  color:#fff;
+}
+#runner:before{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(90deg,rgba(255,255,255,.72),rgba(238,239,242,.86));
+  z-index:0;
+}
+#runner>*{position:relative;z-index:1}
+.wname{
+  font-family:'Arial Narrow','HelveticaNeue-CondensedBold','Roboto Condensed',Arial,sans-serif;
+  font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;
+  color:#fff;background:rgba(72,72,75,.74);padding:7px 13px;margin-bottom:14px;
+  border:0;line-height:1.15;max-width:92vw;box-shadow:none;
+}
+.dialwrap{
+  position:relative;width:min(43vw,174px);aspect-ratio:1;margin-bottom:16px;flex:none;
+}
+.dialwrap svg{width:100%;height:100%;display:block;overflow:visible;transform:none}
+.dialface{fill:#303033;stroke:none}
+.ring-track{fill:none;stroke:rgba(80,80,83,.14);stroke-width:12}
+.ring-progress{fill:none;stroke:#a64655;stroke-width:12;stroke-linecap:butt;transform:rotate(-90deg);transform-origin:50% 50%;}
+.seg{stroke:#a64655}
+.seg.lit{stroke:#a64655}
+.dialwrap.rest .ring-progress{stroke:#77777a}
+.digits{
+  position:absolute;inset:0;display:grid;place-items:center;
+  font-family:'Arial Narrow','HelveticaNeue-CondensedBold','Roboto Condensed',Arial,sans-serif;
+  font-size:min(17vw,62px);font-weight:800;color:#fff;
+  letter-spacing:-.04em;line-height:1;text-shadow:none;
+}
+.dialwrap.pulse .digits{animation:pop .26s ease-out}
+@keyframes pop{0%{transform:scale(1)}50%{transform:scale(1.10)}100%{transform:scale(1)}}
+@media (prefers-reduced-motion:reduce){.dialwrap.pulse .digits{animation:none}}
+.cur{
+  font-family:'Arial Narrow','HelveticaNeue-CondensedBold','Roboto Condensed',Arial,sans-serif;
+  background:rgba(76,76,79,.78);color:#fff;border:0;box-shadow:none;
+  padding:9px 14px;font-size:clamp(18px,6vw,30px);font-weight:800;
+  text-transform:uppercase;letter-spacing:.035em;line-height:1.05;
+  max-width:92vw;text-wrap:balance;
+}
+.nxt{
+  margin-top:9px;background:rgba(92,92,95,.68);color:#fff;border:0;
+  padding:6px 10px;font-family:'Arial Narrow','HelveticaNeue-CondensedBold','Roboto Condensed',Arial,sans-serif;
+  font-size:clamp(11px,3.5vw,16px);font-weight:800;text-transform:uppercase;letter-spacing:.045em;
+  display:inline-flex;gap:7px;align-items:center;max-width:92vw;box-shadow:none;
+}
+.nxt em{font-style:normal;background:rgba(61,61,64,.9);color:#fff;padding:2px 5px;flex:none}
+.nxt span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
+.setc{
+  margin-top:9px;font-family:'Arial Narrow','HelveticaNeue-CondensedBold','Roboto Condensed',Arial,sans-serif;
+  font-size:11px;font-weight:800;letter-spacing:.12em;color:#66666a;text-transform:uppercase;min-height:14px;
+}
+.ctrls{display:flex;gap:7px;margin-top:15px;flex-wrap:wrap;justify-content:center}
+.ctrls .btn{
+  padding:8px 12px;font-size:11px;letter-spacing:.08em;box-shadow:3px 3px 0 rgba(55,55,58,.28);
+  background:#fff;border-color:#555;color:#444;
+}
+.ctrls .btn.primary{background:#555;color:#fff;border-color:#555}
+.ctrls .btn:active{transform:translate(3px,3px)}
+.prog{position:absolute;left:0;right:0;bottom:0;height:7px;background:rgba(90,90,94,.12);border-top:0}
+.prog i{display:block;height:100%;background:#a64655;width:0}
+.aflag{position:absolute;top:7px;right:8px;font-size:9px;letter-spacing:.08em;color:#666;text-transform:uppercase}
+.done .cur{background:rgba(166,70,85,.82);color:#fff}
+</style>
+
+<div class="frame">
+  <div class="titlebar">
+    <span class="sq"></span>
+    <h1 id="tbTitle">INTERVAL</h1>
+    <button class="tbtn" id="themeBtn" title="Toggle theme" aria-label="Toggle theme">&#10022;</button>
+    <button class="tbtn" id="closeBtn" title="Back" aria-label="Back">&#10005;</button>
+  </div>
+
+  <div class="panel">
+    <!-- ------------------------- EDITOR ------------------------- -->
+    <section class="screen on" id="editor">
+      <div>
+        <label class="lbl" for="wname">Workout name</label>
+        <input type="text" id="wname" autocomplete="off" spellcheck="false" placeholder="ABS WORKOUT">
+      </div>
+
+      <div>
+        <label class="lbl" for="src">Routine</label>
+        <textarea id="src" spellcheck="false" autocapitalize="off"></textarea>
+        <p class="hint">
+          One per line: NAME DURATION x SETS.<br>
+          Reads 30s / 45 / 1m / 1m30s / 2 min. Sets optional: x4, &#215;4, 4 sets.<br>
+          Lines starting with # are skipped.
+        </p>
+      </div>
+
+      <div>
+        <span class="lbl">Parsed</span>
+        <div class="plist" id="parsed"></div>
+      </div>
+
+      <div class="tot"><span>Total</span><b id="total">0:00</b></div>
+
+      <button class="btn primary" id="go" style="width:100%;font-size:16px;padding:14px" disabled>START</button>
+
+      <div class="row">
+        <button class="btn" id="save">Save</button>
+        <button class="btn" id="demo">Example</button>
+      </div>
+
+      <div id="savedwrap" style="display:none">
+        <span class="lbl">Saved</span>
+        <div class="chips" id="saved"></div>
+      </div>
+    </section>
+
+    <!-- ------------------------- RUNNER ------------------------- -->
+    <section class="screen" id="runner">
+      <div class="aflag" id="aflag"></div>
+      <div class="wname" id="rWorkout">WORKOUT</div>
+
+      <div class="dialwrap" id="dialwrap">
+        <svg viewBox="0 0 100 100" aria-hidden="true">
+          <circle class="ring-track" cx="50" cy="50" r="43"></circle>
+          <circle class="dialface" cx="50" cy="50" r="36"></circle>
+          <circle class="ring-progress" id="ringProgress" cx="50" cy="50" r="43"></circle>
+        </svg>
+        <div class="digits" id="digits">0</div>
+      </div>
+
+      <div class="cur" id="rCur">READY</div>
+      <div class="nxt" id="rNxtWrap"><em>NXT</em><span id="rNxt">&#8212;</span></div>
+      <div class="setc" id="rSet"></div>
+
+      <div class="ctrls">
+        <button class="btn" id="cBack">Prev</button>
+        <button class="btn primary" id="cPause">Pause</button>
+        <button class="btn" id="cSkip">Skip</button>
+      </div>
+
+      <div class="prog"><i id="bar"></i></div>
+    </section>
+  </div>
+
+  <div class="footbar">
+    <span class="blk"></span>
+    <span class="grow"></span>
+    <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+  </div>
+</div>
+
+<script>
+"use strict";
+
+/* ================= parsing ================= */
+
+const RE_SETS  = /[x×*]\s*(\d{1,3})\s*$|(\d{1,3})\s*sets?\s*$/i;
+const RE_MINSEC= /(\d+)\s*(?:m|min|mins|minute|minutes)\s*(?:(\d+)\s*(?:s|sec|secs|second|seconds)?)?\s*$/i;
+const RE_SEC   = /(\d+)\s*(?:s|sec|secs|second|seconds)?\s*$/i;
+
+function parseLine(raw){
+  const line = raw.trim();
+  if(!line || line.startsWith('#')) return null;
+  let rest = line, sets = 1;
+
+  const ms = rest.match(RE_SETS);
+  if(ms){ sets = parseInt(ms[1] || ms[2], 10); rest = rest.slice(0, ms.index).trim(); }
+  if(!(sets >= 1)) sets = 1;
+
+  let secs = null;
+  const mm = rest.match(RE_MINSEC);
+  if(mm){
+    secs = parseInt(mm[1],10)*60 + (mm[2] ? parseInt(mm[2],10) : 0);
+    rest = rest.slice(0, mm.index).trim();
+  }else{
+    const sm = rest.match(RE_SEC);
+    if(sm){ secs = parseInt(sm[1],10); rest = rest.slice(0, sm.index).trim(); }
+  }
+  rest = rest.replace(/[\s\-–—:,]+$/,'').trim();
+
+  if(secs === null || secs <= 0) return {error:true, text:line, why:'no duration'};
+  if(!rest)                      return {error:true, text:line, why:'no name'};
+  if(secs > 3600)                return {error:true, text:line, why:'over an hour'};
+  return {name:rest, secs, sets};
+}
+const parseRoutine = t => t.split(/\r?\n/).map(parseLine).filter(Boolean);
+
+const fmt = s => { s=Math.max(0,Math.round(s)); const m=Math.floor(s/60);
+                   return m ? m+':'+String(s%60).padStart(2,'0') : String(s); };
+const fmtLong = s => { s=Math.max(0,Math.round(s));
+                       return Math.floor(s/60)+':'+String(s%60).padStart(2,'0'); };
+
+/* ================= editor ================= */
+
+const REST = 3, LEADIN = 3;
+const $ = id => document.getElementById(id);
+const elSrc=$('src'), elName=$('wname');
+
+const EXAMPLE =
+`Bicycle crunches 30s x 4
+Hollow hold 30s x 2
+Leg lifts 30s x 2
+Flutter kicks 30s x 2
+Plank knee taps 1m x 2
+Mountain climbers 45s x 2
+Scissor kicks 45s x 2`;
+
+const esc = s => String(s).replace(/[&<>"']/g, c =>
+  ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+let items = [];
+
+function render(){
+  items = parseRoutine(elSrc.value);
+  const box = $('parsed');
+  box.innerHTML = '';
+  if(!items.length){
+    box.innerHTML = '<div class="prow"><span class="nm" style="opacity:.5">EMPTY</span><span></span><span></span></div>';
+  }
+  for(const it of items){
+    const d = document.createElement('div');
+    d.className = it.error ? 'prow bad' : 'prow';
+    d.innerHTML = it.error
+      ? `<span class="nm">"${esc(it.text)}" &#8212; ${esc(it.why)}</span><span></span><span></span>`
+      : `<span class="nm">${esc(it.name)}</span><span class="du">${fmt(it.secs)}</span><span class="st">&#215;${it.sets}</span>`;
+    box.appendChild(d);
+  }
+  const good = items.filter(i => !i.error);
+  const n = good.reduce((a,i) => a + i.sets, 0);
+  const work = good.reduce((a,i) => a + i.secs * i.sets, 0);
+  $('total').textContent = fmtLong(n ? work + LEADIN + (n-1)*REST : 0);
+  $('go').disabled = n === 0;
+  $('go').textContent = n ? `START · ${n}` : 'START';
+}
+elSrc.addEventListener('input', render);
+$('demo').addEventListener('click', () => {
+  elSrc.value = EXAMPLE;
+  if(!elName.value.trim()) elName.value = 'Abs workout';
+  render();
+});
+
+const KEY='interval.nso.routines', LAST='interval.nso.last', TKEY='interval.nso.theme';
+const readStore = () => { try{ return JSON.parse(localStorage.getItem(KEY)) || {}; }catch(e){ return {}; } };
+const writeStore = o => { try{ localStorage.setItem(KEY, JSON.stringify(o)); }catch(e){} };
+
+function paintSaved(){
+  const st = readStore(), names = Object.keys(st), wrap = $('saved');
+  $('savedwrap').style.display = names.length ? '' : 'none';
+  wrap.innerHTML = '';
+  for(const n of names){
+    const c = document.createElement('span'); c.className='chip';
+    const b = document.createElement('button'); b.textContent = n.toUpperCase();
+    b.addEventListener('click', () => { elName.value=n; elSrc.value=st[n]; render(); });
+    const x = document.createElement('button'); x.className='x'; x.textContent='×';
+    x.setAttribute('aria-label','Delete '+n);
+    x.addEventListener('click', () => { const s=readStore(); delete s[n]; writeStore(s); paintSaved(); });
+    c.append(b,x); wrap.appendChild(c);
+  }
+}
+$('save').addEventListener('click', () => {
+  const s = readStore(); s[elName.value.trim() || 'Untitled'] = elSrc.value;
+  writeStore(s); paintSaved();
+});
+
+/* ================= theme ================= */
+function setTheme(t){
+  document.documentElement.setAttribute('data-t', t);
+  try{ localStorage.setItem(TKEY, t); }catch(e){}
+}
+$('themeBtn').addEventListener('click', () => {
+  setTheme(document.documentElement.getAttribute('data-t') === 'dark' ? 'nso' : 'dark');
+});
+
+/* ================= audio =================
+ * Web Audio oscillators only — no <audio>, no MediaSession — so music keeps
+ * playing. navigator.audioSession 'transient' ducks Spotify for the length of
+ * a blip and restores it; 'ambient' never touches it but obeys the ringer.
+ */
+let ctx = null, audioMode = '';
+const live = new Set();
+
+async function initAudio(){
+  if(ctx){ if(ctx.state === 'suspended') await ctx.resume(); return; }
+  if(navigator.audioSession){
+    for(const t of ['transient','ambient']){
+      try{ navigator.audioSession.type = t; audioMode = t; break; }catch(e){}
+    }
+  }
+  const AC = window.AudioContext || window.webkitAudioContext;
+  ctx = new AC({latencyHint:'interactive'});
+  if(ctx.state === 'suspended') await ctx.resume();
+  $('aflag').textContent = audioMode === 'transient' ? 'DUCKS MUSIC'
+                        : audioMode === 'ambient'   ? 'MIXES' : '';
+}
+
+function tone(at, freq, dur, peak, type){
+  if(!ctx) return;
+  const osc = ctx.createOscillator(), g = ctx.createGain();
+  osc.type = type; osc.frequency.setValueAtTime(freq, at);
+  g.gain.setValueAtTime(0.0001, at);
+  g.gain.exponentialRampToValueAtTime(peak, at + 0.008);
+  g.gain.exponentialRampToValueAtTime(0.0001, at + dur);
+  osc.connect(g).connect(ctx.destination);
+  osc.start(at); osc.stop(at + dur + 0.05);
+  live.add(osc); osc.onended = () => live.delete(osc);
+}
+function stopScheduled(){ for(const o of live){ try{ o.stop(); }catch(e){} } live.clear(); }
+
+/* Two clocks, deliberately separate:
+     now()            — wall clock, drives phase timing and the display.
+     ctx.currentTime  — audio clock, drives beep scheduling only.
+   They must not be the same. An AudioContext that gets suspended (iOS
+   backgrounding, a device with no output) stops advancing currentTime, and
+   a timer built on it would silently freeze. performance.now() never does. */
+const now = () => performance.now() / 1000;
+
+/* Two distinct chiptune voices:
+ *   EDGE  — first second and last second of an interval (long, low)
+ *   TICK  — third-last and second-last second (short, high)            */
+const EDGE = at => { tone(at, 392, 0.30, 0.30, 'square');
+                     tone(at, 196, 0.30, 0.13, 'square'); };
+const TICK = at =>   tone(at, 1046, 0.07, 0.22, 'square');
+
+/* ================= runner ================= */
+
+let steps=[], idx=0, phaseEndsAt=0, phaseLen=0;
+let paused=false, pausedLeft=0, running=false, tick=0, wakeLock=null, lastShown=-1;
+
+function buildSteps(list){
+  const out=[], flat=[];
+  for(const it of list.filter(i => !i.error))
+    for(let s=1; s<=it.sets; s++) flat.push({name:it.name, secs:it.secs, set:s, of:it.sets});
+  if(!flat.length) return out;
+  out.push({kind:'lead', secs:LEADIN, name:'GET READY', next:flat[0]});
+  flat.forEach((f,i) => {
+    out.push({kind:'work', secs:f.secs, name:f.name, set:f.set, of:f.of, next:flat[i+1]||null});
+    if(i < flat.length-1) out.push({kind:'rest', secs:REST, name:'REST', next:flat[i+1]});
+  });
+  out.push({kind:'end', secs:0, name:'DONE', next:null});
+  return out;
+}
+
+/* circular countdown ring — reference-inspired continuous arc */
+const SVGNS='http://www.w3.org/2000/svg';
+let ringCircle=null, ringCirc=2*Math.PI*43;
+function buildRing(n){
+  if(ringCircle) return;
+  ringCircle=$('ringProgress');
+  ringCircle.style.strokeDasharray=ringCirc.toFixed(2);
+  ringCircle.style.strokeDashoffset='0';
+}
+function paintRing(frac){
+  if(!ringCircle) buildRing(0);
+  const f=Math.max(0,Math.min(1,frac));
+  ringCircle.style.strokeDasharray=ringCirc.toFixed(2);
+  ringCircle.style.strokeDashoffset=(ringCirc*(1-f)).toFixed(2);
+}
+
+async function start(){
+  steps = buildSteps(parseRoutine(elSrc.value));
+  if(steps.length < 2) return;
+
+  // Switch to the runner immediately so the tap always feels instant.
+  $('rWorkout').textContent = (elName.value.trim() || 'WORKOUT').toUpperCase();
+  $('tbTitle').textContent = 'RUNNING';
+  try{ localStorage.setItem(LAST, JSON.stringify({n:elName.value, s:elSrc.value})); }catch(e){}
+  $('editor').classList.remove('on');
+  $('runner').classList.add('on');
+  $('runner').classList.remove('done');
+  $('cPause').textContent = 'Pause';
+
+  // Audio must never be able to block the workout: a device with no output,
+  // or a resume() that hangs, would otherwise leave START doing nothing.
+  try{
+    await Promise.race([initAudio(), new Promise(r => setTimeout(r, 1500))]);
+  }catch(e){ /* run silently rather than not at all */ }
+  if(!ctx) $('aflag').textContent = 'NO AUDIO';
+
+  await requestWake();
+  idx = -1; paused = false; running = true;
+  advance(); startLoop();
+}
+
+function advance(){
+  idx++;
+  if(idx >= steps.length || steps[idx].kind === 'end'){ finish(); return; }
+  const s = steps[idx];
+  phaseLen = s.secs;
+  phaseEndsAt = now() + s.secs;
+  lastShown = -1;
+  buildRing(s.secs);
+  schedule(s, s.secs);
+  paint(s);
+
+  // Paint the opening frame now. Waiting for the next tick would flash the
+  // outgoing phase's number underneath the incoming phase's name.
+  lastShown = s.secs;
+  $('digits').textContent = s.secs >= 60 ? fmt(s.secs) : s.secs;
+  paintRing(1);
+}
+
+/* Beeps are queued on the audio clock so they land on time even if the main
+ * thread is throttled. Placement (per the brief): EDGE on the first second
+ * and on the last second; TICK on the third-last and second-last. Every beep
+ * therefore coincides with a number that is actually on screen.            */
+function schedule(s, left){
+  if(!ctx || s.kind === 'rest') return;
+  // t0 is on the AUDIO clock; every offset below is relative to it, so the
+  // two clocks never need to agree on an absolute value.
+  const t0 = ctx.currentTime, T = s.secs, elapsed = T - left;
+
+  // Map an offset-from-phase-start to an absolute audio-clock time.
+  // null = already elapsed. Anything due right now is nudged a hair ahead,
+  // because a tone scheduled exactly at currentTime can be dropped.
+  const at = off => {
+    const t = t0 + (off - elapsed);
+    if(t < t0 - 0.001) return null;
+    return Math.max(t, t0 + 0.015);
+  };
+
+  let t;
+  // first second — only on a fresh start, never when resuming mid-phase
+  if(elapsed < 0.05 && (t = at(0)) !== null) EDGE(t);
+  // countdown ticks and the closing edge; offsets at or below 0 would
+  // collide with the opening EDGE on very short phases, so drop them
+  if(T - 3 > 0 && (t = at(T - 3)) !== null) TICK(t);
+  if(T - 2 > 0 && (t = at(T - 2)) !== null) TICK(t);
+  if(T - 1 > 0 && (t = at(T - 1)) !== null) EDGE(t);
+}
+
+function paint(s){
+  const w = $('dialwrap');
+  w.classList.toggle('rest', s.kind !== 'work');
+  $('rCur').textContent = s.name;
+  const nx = s.next;
+  $('rNxt').textContent = nx ? nx.name : 'FINISH';
+  $('rSet').textContent = (s.kind === 'work' && s.of > 1) ? `SET ${s.set} / ${s.of}` : '';
+}
+
+/* Driven by setInterval, not requestAnimationFrame. rAF is suspended while
+   the page is hidden, which would stop advance() from running at a phase
+   boundary and leave the next interval's beeps unscheduled. A timer keeps
+   ticking (throttled) in the background, so the workout stays on track.
+   Nothing here needs frame-rate updates: digits and ring both change at
+   most once a second. */
+function startLoop(){ clearInterval(tick); tick = setInterval(step, 100); }
+function stopLoop(){ clearInterval(tick); tick = 0; }
+
+function step(){
+  if(!running || paused) return;
+  const left = phaseEndsAt - now();
+  if(left <= 0){ advance(); return; }
+
+  const shown = Math.ceil(left);
+  if(shown !== lastShown){
+    lastShown = shown;
+    $('digits').textContent = phaseLen >= 60 ? fmt(shown) : shown;
+    if(steps[idx].kind === 'work' && shown <= 3) pulse();
+  }
+  paintRing(phaseLen ? left/phaseLen : 0);
+
+  let done=0, all=0;
+  for(let i=0;i<steps.length;i++){
+    if(steps[i].kind === 'end') continue;
+    all += steps[i].secs;
+    if(i < idx) done += steps[i].secs;
+    else if(i === idx) done += phaseLen - Math.max(0,left);
+  }
+  $('bar').style.width = (all ? done/all*100 : 0) + '%';
+}
+
+let pt=0;
+function pulse(){
+  const w=$('dialwrap');
+  w.classList.remove('pulse'); void w.offsetWidth; w.classList.add('pulse');
+  clearTimeout(pt); pt = setTimeout(() => w.classList.remove('pulse'), 300);
+}
+
+function finish(){
+  running=false; stopLoop();
+  $('runner').classList.add('done');
+  $('digits').textContent='✓';
+  paintRing(1);
+  $('rCur').textContent='COMPLETE';
+  $('rNxt').textContent='NICE WORK';
+  $('rSet').textContent=''; $('bar').style.width='100%';
+  $('cPause').textContent='Done'; $('tbTitle').textContent='COMPLETE';
+  releaseWake();
+}
+
+function togglePause(){
+  if(!running){ quit(); return; }
+  paused = !paused;
+  $('cPause').textContent = paused ? 'Resume' : 'Pause';
+  if(paused){
+    pausedLeft = Math.max(0, phaseEndsAt - now());
+    stopScheduled();
+  }else{
+    phaseEndsAt = now() + pausedLeft;
+    schedule(steps[idx], pausedLeft);
+  }
+}
+function jump(target){
+  stopScheduled();
+  paused = false; $('cPause').textContent='Pause';
+  idx = target - 1; advance();
+}
+function skip(){
+  if(!running) return;
+  let j = idx+1;
+  while(j < steps.length && steps[j].kind === 'rest') j++;
+  jump(j);
+}
+function back(){
+  if(!running) return;
+  const w=[]; for(let i=0;i<steps.length;i++) if(steps[i].kind==='work') w.push(i);
+  const pos = w.indexOf(idx);
+  let t;
+  if(pos > 0) t = w[pos-1];
+  else if(pos === 0) t = idx;
+  else { t = w.filter(i => i < idx).pop(); if(t === undefined) t = w[0]; }
+  jump(t);
+}
+function quit(){
+  running=false; paused=false;
+  stopLoop(); stopScheduled(); releaseWake();
+  $('cPause').textContent='Pause'; $('tbTitle').textContent='INTERVAL';
+  $('runner').classList.remove('on','done');
+  $('editor').classList.add('on');
+}
+
+$('go').addEventListener('click', start);
+$('cPause').addEventListener('click', togglePause);
+$('cSkip').addEventListener('click', skip);
+$('cBack').addEventListener('click', back);
+$('closeBtn').addEventListener('click', () => {
+  if($('runner').classList.contains('on')) quit();
+});
+document.addEventListener('keydown', e => {
+  if(!$('runner').classList.contains('on')) return;
+  if(e.code==='Space'){ e.preventDefault(); togglePause(); }
+  else if(e.code==='ArrowRight') skip();
+  else if(e.code==='ArrowLeft') back();
+  else if(e.code==='Escape') quit();
+});
+
+async function requestWake(){
+  try{ if('wakeLock' in navigator) wakeLock = await navigator.wakeLock.request('screen'); }catch(e){}
+}
+function releaseWake(){ try{ wakeLock && wakeLock.release(); }catch(e){} wakeLock=null; }
+document.addEventListener('visibilitychange', async () => {
+  if(document.visibilityState !== 'visible') return;
+  if(running) await requestWake();
+  if(ctx && ctx.state === 'suspended'){ try{ await ctx.resume(); }catch(e){} }
+});
+
+(function boot(){
+  let t='nso'; try{ t = localStorage.getItem(TKEY) || 'nso'; }catch(e){}
+  setTheme(t);
+  let last=null; try{ last = JSON.parse(localStorage.getItem(LAST)); }catch(e){}
+  if(last && last.s){ elName.value = last.n||''; elSrc.value = last.s; }
+  else { elName.value='Abs workout'; elSrc.value = EXAMPLE; }
+  render(); paintSaved();
+})();
+</script>
+
+<script>if (location.protocol !== "file:" && "serviceWorker" in navigator) window.addEventListener("load", () => navigator.serviceWorker.register("./sw.js"));</script>
+</body>
+</html>
